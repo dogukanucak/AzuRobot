@@ -9,13 +9,7 @@ const app: express.Application = express();
 
 const connector = new AzureConnector();
 const connection = connector.getConnection();
-
 const helper = new AzureHelper(connection);
-// helper.createWorkItem().then(response => {
-//   console.log("RES:",response);
-// }).catch(error => {
-//   console.log("ERR:",error);
-// })
 
 
 
